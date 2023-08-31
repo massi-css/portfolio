@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ab384d2798.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/png" href="images/logo.png">
+    <title>portfolio</title>
+</head>
+<body>
+    <div id="header" class="page">
+        <div class="container">
+            <nav>
+                <img src="images/Capture.PNG" class="logo">
+                <ul>
+                    <li><div class="botton"><a href="#header">Home</a></div></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Web developer</p>
+                <h1>Hi,I'm <span>massi</span> <br>have a look!</h1>
+            </div>
+        </div>   
+    </div>
+    <div id="about" class="page">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-left">
+                    <img src="images/415519.jpg"> 
+                </div>
+                <div class="about-col-right">
+                    <div class="box">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Welcome to my web development portfolio! My name is <span>Massi</span>, and I am a passionate web developer with 8 months of experience in the field. Over the years, I have had the opportunity to work on various projects, ranging from simple websites to complex web applications, and I have gained valuable skills and knowledge along the way.As a web developer, my goal is to create <span>user-friendly</span> and <span>responsive</span> websites that not only meet but exceed the expectations of my clients. I have a strong foundation in <span>HTML</span>, <span>CSS</span>, and <span>JavaScript</span>, and I am well-versed in a variety of front-end and back-end frameworks and tools, including React, Vue.js, Node.js, Express, and MongoDB, to name a few.In my <span>portfolio</span>, you will find some of my most recent work. I hope you find me a part of your projet...</p>
+                    </div>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">experience</p>
+                        <p class="tab-links" onclick="opentab('education')">education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>app devlopement</span><br>Web app devlopement</li>
+                            <li><span>web devlopement</span><br>building Android/ios apps(soon...)</li>
+                            <li><span>UI/UX</span><br>designing Web/ app interfaces(soon...)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>this year</span><br>Licenced in si  </li>
+                            <li><span>2023-current</span><br>UI/UX design training at cscc club</li>
+                            <li><span>2021-2022</span><br>learned web devlopement at freecodecamp</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>experting designing Web/ app interfaces</li>
+                            <li><span>2023</span><br>practicing the UI/UX design</li>
+                            <li><span>2022</span><br>web devlopement</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio" class="page">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images\extenxion1.PNG">
+                    <div class="layer">
+                        <h3>chrome extension</h3>
+                        <p>an extension that help to save any website adresse or the current tab</p>
+                        <a href="chrome extension/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images\travel3.PNG">
+                    <div class="layer">
+                        <h3>travel website</h3>
+                        <p>simple ui not finished for a future project of travel in Algeria</p>
+                        <a href="travel-website\index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images\Calculator1.PNG">
+                    <div class="layer">
+                        <h3>calculator</h3>
+                        <p>unique ui of a calculator using js and css</p>
+                        <a href="calculator/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn"> see more</a>
+    </div>
+    <div id="contact" class="page">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>massinissa111111@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>0549505636</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100087825736315"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://github.com/massi-css"><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <!--<a href="images\myCV.pdf" download class="btn">download CV</a>-->
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" placeholder="your name" required>
+                        <input type="email" name="email" placeholder="your email" required>
+                        <textarea name="message" rows="6" placeholder="your message"></textarea>
+                        <button type="submit" class="btn">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">copyright @massi with <i class="fa-regular fa-heart"></i> made by me ofc</div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
