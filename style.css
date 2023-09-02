@@ -106,6 +106,14 @@ nav ul li a:hover{
 .header-text h1 span{
     color: #ff004f;
 }
+::-webkit-scrollbar{
+    background-color: black;
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #ff004f;
+    border-radius: 7%;
+}
 /*------------------about--------------------*/
 #about{
     color: #ababab;
@@ -384,7 +392,7 @@ form .btn:hover{
         font-size: 47px;
     }
     .header-text{
-        margin-top: 120%;
+        margin-top: 100%;
     }
     #header{
         height: 100vh;
