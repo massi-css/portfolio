@@ -175,19 +175,21 @@
           </div>
         </div>
       </div>
-      <a id="see" class="btn close"> see more</a>
+      <a id="btn" class="btn close"> see more</a>
       <script>
-        const btn_more = document.getElementById("see");
+        const btn = document.getElementById("btn");
         const works = document.querySelectorAll(".new");
-        btn_more.addEventListener("click", function () {
-          if (btn_more.className == "btn close") {
-            btn_more.className = "btn open";
+        btn.addEventListener("click", function () {
+          if (btn.className == "btn close") {
+            btn.className = "btn open";
+            btn.innerHTML = "see less";
             for (let work of works) {
               work.className = "new work more";
             }
           } else {
-            if (btn_more.className == "btn open") {
-              btn_more.className = "btn close";
+            if (btn.className == "btn open") {
+              btn.className = "btn close";
+              btn.innerHTML = "see more";
               for (let work of works) {
                 work.className = "new work nomore";
               }
