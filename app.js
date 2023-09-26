@@ -2,9 +2,26 @@ const btn = document.getElementById("btn");
 var navlinks = document.querySelectorAll(".navlink");
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
-const navMobileVue = document.querySelector('.nav-mobile-vue');
-
+const navMobileVue = document.querySelector(".nav-mobile-vue");
 const works = document.querySelectorAll(".new");
+const text = document.querySelector(".text");
+
+const textLoad = () => {
+  text.textContent = "massi";
+  setTimeout(() => {
+    text.textContent = "a Web Developer";
+  }, 6000);
+  setTimeout(() => {
+    text.textContent = "a Designer";
+  }, 12000);
+  setTimeout(() => {
+    textLoad();
+  }, 18000);
+};
+
+window.onload = function() {
+  textLoad();
+};
 btn.addEventListener("click", function () {
   if (btn.className == "btn close") {
     btn.className = "btn open";
@@ -41,6 +58,6 @@ function opentab(tabname) {
   document.getElementById(tabname).classList.add("active-tab");
 }
 
-navMobileVue.addEventListener('mousedown', (event) => {
+navMobileVue.addEventListener("mousedown", (event) => {
   event.preventDefault();
 });

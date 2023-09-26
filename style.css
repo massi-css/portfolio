@@ -4,10 +4,10 @@
   font-family: "popins", sans-serif;
   box-sizing: border-box;
 }
-:root{
-  --primary-color: #FF004F;
-  --text-color:#fff;
-  --background-color:black;
+:root {
+  --primary-color: #ff004f;
+  --text-color: #fff;
+  --background-color: black;
 }
 html {
   scroll-behavior: smooth;
@@ -131,6 +131,41 @@ div ul li a {
   background-color: var(--primary-color);
   border-radius: 7%;
 }
+.type-writer {
+  width: fit-content;
+  height: fit-content;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+.text {
+  letter-spacing: 5px;
+  margin: 0;
+  font-size: 60px;
+  border-right: 5px solid var(--primary-color);
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing-start 3s  infinite alternate,
+    cursor 0.4s step-end infinite alternate;
+  transition: border-right 0.5s ease-out;
+}
+/* cursor blinking */
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+/* typing effect */
+@keyframes typing-start {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
 /*------------------about--------------------*/
 #about {
   color: #ababab;
@@ -142,10 +177,12 @@ div ul li a {
 }
 .about-col-left {
   flex-basis: 35%;
+  overflow: hidden;
 }
 .about-col-left img {
   width: 100%;
   border-radius: 15px;
+  transform: scale(1.5);
 }
 .about-col-right {
   flex-basis: 60%;
