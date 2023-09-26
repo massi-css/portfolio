@@ -2,6 +2,7 @@ const btn = document.getElementById("btn");
 var navlinks = document.querySelectorAll(".navlink");
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
+const navMobileVue = document.querySelector('.nav-mobile-vue');
 
 const works = document.querySelectorAll(".new");
 btn.addEventListener("click", function () {
@@ -39,3 +40,7 @@ function opentab(tabname) {
   event.currentTarget.classList.add("active-link");
   document.getElementById(tabname).classList.add("active-tab");
 }
+
+navMobileVue.addEventListener('mousedown', (event) => {
+  event.preventDefault();
+});
