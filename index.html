@@ -9,13 +9,14 @@
       src="https://kit.fontawesome.com/ab384d2798.js"
       crossorigin="anonymous"
     ></script>
+    <script defer src="app.js"></script>
     <link rel="shortcut icon" type="image/png" href="images/logo.png" />
     <title>portfolio</title>
   </head>
   <body>
     <div id="header" class="page">
       <div class="container">
-        <nav>
+        <nav class="nav-desktop-vue">
           <img src="images/Capture.png" class="logo" />
           <ul>
             <li><a href="#header">Home</a></li>
@@ -170,27 +171,6 @@
         </div>
       </div>
       <a id="btn" class="btn close"> see more</a>
-      <script>
-        const btn = document.getElementById("btn");
-        const works = document.querySelectorAll(".new");
-        btn.addEventListener("click", function () {
-          if (btn.className == "btn close") {
-            btn.className = "btn open";
-            btn.innerHTML = "see less";
-            for (let work of works) {
-              work.className = "new work more";
-            }
-          } else {
-            if (btn.className == "btn open") {
-              btn.className = "btn close";
-              btn.innerHTML = "see more";
-              for (let work of works) {
-                work.className = "new work nomore";
-              }
-            }
-          }
-        });
-      </script>
     </div>
     <div id="contact" class="page">
       <div class="container">
@@ -232,23 +212,33 @@
           </div>
         </div>
       </div>
+      <div class="nav-mobile-vue">
+        <ul>
+          <li>
+            <a href="#header"
+              ><i class="fa-solid fa-house fa-2xl navlink"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#about"
+              ><i class="fa-solid fa-address-card fa-2xl navlink"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#portfolio"
+              ><i class="fas fa-briefcase fa-2xl navlink"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#contact"
+              ><i class="fa-solid fa-message fa-2xl navlink"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
       <div class="copyright">
         copyright 2023 with <i class="fa-regular fa-heart"></i> made by massi
       </div>
     </div>
-    <script>
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
-      function opentab(tabname) {
-        for (tablink of tablinks) {
-          tablink.classList.remove("active-link");
-        }
-        for (tabcontent of tabcontents) {
-          tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-      }
-    </script>
   </body>
 </html>
