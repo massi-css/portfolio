@@ -149,7 +149,8 @@ div ul li a {
   overflow: hidden;
   animation: typing-start 3s infinite alternate,
     cursor 0.4s step-end infinite alternate;
-  transition: border-right 0.5s ease-out;
+  transform: translateZ(0);
+  will-change: animation;
 }
 /* cursor blinking */
 @keyframes cursor {
@@ -403,6 +404,15 @@ form .btn:hover {
 /*-----responsive--------*/
 
 @media screen and (max-width: 768px) {
+  .header-text h1 {
+    font-size: 35px;
+  }
+  .text {
+    font-size: 25px !important;
+  }
+  .type-writer {
+    align-items: center;
+  }
   html {
     scroll-padding-top: 20px;
   }
@@ -466,9 +476,6 @@ form .btn:hover {
 
   .header-text p {
     font-size: 25px;
-  }
-  .header-text h1 {
-    font-size: 47px;
   }
   .header-text {
     margin-top: 35vh;
