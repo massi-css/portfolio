@@ -19,7 +19,7 @@ const textLoad = () => {
   }, 18000);
 };
 
-window.onload = function() {
+window.onload = function () {
   textLoad();
 };
 btn.addEventListener("click", function () {
