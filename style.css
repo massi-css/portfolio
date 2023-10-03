@@ -57,8 +57,15 @@ nav {
   z-index: 4;
   user-select: none;
 }
-.logo {
-  width: 140px;
+.logo{
+  display: flex;
+  align-items:end;
+  justify-content: center;
+  font-weight: bold;
+  font-size: large;
+}
+.logo span{
+  color: var(--primary-color);
 }
 nav ul li {
   display: inline-block;
@@ -419,10 +426,24 @@ form .btn:hover {
   .copyright {
     position: fixed;
     padding: 10px 0;
-    bottom: 5px;
+    margin-top: 5px;
+    bottom: 70px;
   }
   form {
     margin-bottom: 100px;
+  }
+  .nav-mobile-vue ul li a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .nav-mobile-vue ul li a p{
+    margin-top: 10px !important;
+    font-size: small !important;
+    filter: brightness(0.5);
+    color: var(--text-color);
   }
   .nav-mobile-vue {
     display: block;
