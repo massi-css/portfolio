@@ -10,13 +10,13 @@ const textLoad = () => {
   text.textContent = "massi";
   setTimeout(() => {
     text.textContent = "a Web Developer";
-  }, 6000);
+  }, 5950);
   setTimeout(() => {
     text.textContent = "a Designer";
-  }, 12000);
+  }, 11950);
   setTimeout(() => {
     textLoad();
-  }, 18000);
+  }, 17950);
 };
 
 window.onload = function () {
